@@ -7,3 +7,8 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+Book.create([
+  { title: "The Great Gatsby", author: "F. Scott Fitzgerald", isbn: "1234567890", status: true },
+  { title: "1984", author: "George Orwell", isbn: "1234567891", status: true },
+  { title: "To Kill a Mockingbird", author: "Harper Lee", isbn: "1234567892", status: true }
+])
