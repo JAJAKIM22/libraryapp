@@ -1,24 +1,62 @@
-# README
+# Book Lending Library
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple book lending library application built with Ruby on Rails. It includes authentication without Devise, book borrowing, and user sessions.
 
-Things you may want to cover:
+## Prerequisites
 
-* Ruby version
+Ensure you have the following installed:
 
-* System dependencies
+- Ruby (>= 3.0)
+- Rails (>= 7.0)
+- SQLite3 or PostgreSQL (for database)
+- Bundler
 
-* Configuration
+## Getting Started
 
-* Database creation
+### 1. Install Required Gems
 
-* Database initialization
+Navigate to your project directory and install dependencies:
 
-* How to run the test suite
+```sh
+bundle install
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### 2. Set Up the Database
 
-* Deployment instructions
+Run the database migrations:
 
-* ...
+```sh
+rails db:migrate
+```
+
+### 3. Add Sample Data to the Database
+
+Seed the database with initial data:
+
+```sh
+rails db:seed
+```
+
+### 4. Creating a User for Authentication
+
+Use Rails console to create a user:
+
+```sh
+rails console
+```
+
+```ruby
+User.create!(email: "test@example.com", password: "password", password_confirmation: "password")
+```
+
+### 5. Start the Server
+
+Run the Rails server:
+
+```sh
+rails server
+```
+
+## Conclusion
+
+You have successfully set up a Rails-based book lending library with authentication, borrowing functionality, and session management. Happy coding!
